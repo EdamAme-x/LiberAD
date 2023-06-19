@@ -7,7 +7,8 @@ import * as $1 from "./routes/api/[name].tsx";
 import * as $2 from "./routes/api/joke.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiberComp/GlobalStyle.tsx";
-import * as $$1 from "./islands/LiberComp/Link.tsx";
+import * as $$1 from "./islands/LiberComp/IndexCenter.tsx";
+import * as $$2 from "./islands/LiberComp/Link.tsx";
 
 const manifest = {
   routes: {
@@ -18,7 +19,8 @@ const manifest = {
   },
   islands: {
     "./islands/LiberComp/GlobalStyle.tsx": $$0,
-    "./islands/LiberComp/Link.tsx": $$1,
+    "./islands/LiberComp/IndexCenter.tsx": $$1,
+    "./islands/LiberComp/Link.tsx": $$2,
   },
   baseUrl: import.meta.url,
 };
