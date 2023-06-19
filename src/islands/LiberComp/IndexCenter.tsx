@@ -1,7 +1,9 @@
 function IndexCenter() {
   return (
     <>
-      <div>IndexCenter</div>
+      <div className="w-screen h-auto">
+        IndexCenter
+      </div>
     </>
   );
 }
