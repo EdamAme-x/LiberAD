@@ -23,19 +23,19 @@ export default function Header() {
       </a>
 
       <Link
-        to="#example"
+        to="/#example"
         className="ml-auto p-2.5 text-xl hover:bg-gray-600 rounded"
       >
         Example
       </Link>
       <Link
-        to="#about"
+        to="/#about"
         className="mx-2 p-2.5 text-xl hover:bg-gray-600 rounded"
       >
         Details
       </Link>
       <Link
-        to="#start"
+        to="/#start"
         className="ml-5 p-5 pt-2.5 pb-2.5 text-xl bg-blue-500 rounded hover:bg-blue-600 font-bold hidden md:flex"
       >
         Get Started
