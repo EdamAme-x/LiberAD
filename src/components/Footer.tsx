@@ -2,7 +2,7 @@ import Link from "LiberComp/Link.tsx";
 
 export default function Header() {
     return (
-        <footer className="bg-gray-800 text-white h-auto w-screen">
+        <footer className="bg-gray-900 text-white h-auto w-screen">
             <div>
                 <p className="text-white text-center p-2 text-xl">Links</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
