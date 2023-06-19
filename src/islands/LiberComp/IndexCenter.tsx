@@ -20,6 +20,11 @@ function IndexCenter() {
             <span className="text-red-500">AD</span>{" "}
             <span className="text-blue-500">!</span>
           </h2>
+
+          <h3 className="font-extrabold text-xl sm:text-2xl lg:text-3xl tracking-tight text-center dark:text-white w-screen absolute top-[150px] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            LiberAD は、無料の広告ネットワークサービスです。<br/>
+            自由にサイトに広告を設置できます。条件は学生であること。
+          </h3>
         </div>
       </>
     );
