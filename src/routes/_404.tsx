@@ -1,7 +1,13 @@
+import Layout from "Layout";
+
 function _404() {
   return (
-    <div>_404</div>
+    <>
+      <Layout meta={{title: "404 - LiberAD", desc: false}}>
+        <h1>404</h1>
+      </Layout>
+    </>
   )
 }
 
-export default _404
+export default _404;

@@ -9,11 +9,11 @@ export default function Header() {
                     <Link to="/" className="text-center hover:bg-gray-600">Top</Link>
                     <Link to="#example" className="text-center hover:bg-gray-600">Example</Link>
                     <Link to="/contact" className="text-center hover:bg-gray-600">Contact</Link>
-                    <Link to="/" className="text-center hover:bg-gray-600">GitHub</Link>
+                    <Link to="https://github.com/edamame-x/LiberAD" className="text-center hover:bg-gray-600">GitHub</Link>
                 </div>
             </div>
 
-            <div className="text-center p-2">
+            <div className="text-center p-2 mt-5">
                 &copy; 2023 amex / <a href="https://twitter.com/macl2189" target="_blank">macl2189</a> All rights reserved.  
             </div>
         </footer>
