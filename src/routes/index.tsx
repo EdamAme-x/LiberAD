@@ -8,6 +8,7 @@ export default function TopPage() {
       <Layout meta={false} classChild="pt-[50px] h-auto bg-gray-800 text-white">
         <IndexCenter />
         <About />
+        <Example />
       </Layout>
     </>
   );
@@ -105,6 +106,33 @@ function About() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Example() {
+  return (
+    <div>
+      <h3 className="text-3xl text-center mt-3 font-bold">
+        <span className="text-red-500">&lt;</span>
+        <span className="text-4xl px-2">Example </span>
+        <span className="text-gray-400">/</span>
+        <span className="text-red-500">&gt;</span>
+      </h3>
+
+      <div className="w-full h-auto flex flex-wrap">
+        <div className="sm:w-1/2 w-full h-auto">
+          <div className="w-full h-[300px] bg-gray-700">
+            <h4>AD</h4>
+          </div>
+        </div>
+
+        <div className="sm:w-1/2 w-full h-auto">
+          <div className="w-full h-[300px] bg-gray-700">
+            <h4>Sites participating in Liber AD</h4>
           </div>
         </div>
       </div>
