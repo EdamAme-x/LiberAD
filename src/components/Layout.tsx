@@ -41,7 +41,7 @@ export default function Layout({
           className={
             classChild
               ? classChild
-              : "pt-[50px] h-screen bg-gray-800 text-white"
+              : "pt-[50px] h-auto bg-gray-800 text-white"
           }
         >
           {children}
