@@ -35,7 +35,9 @@ function About() {
                   className="w-full p-4 text-[14px]"
                   style={{ wordWrap: "keep-all" }}
                 >
-                  LiberADは学生が開発・管理しているサイトに、学生間のサイトを繋げる<span className="text-gray-200">広告ネットワーク</span>を提供するサービスです。
+                  LiberADは学生が開発・管理しているサイトに、学生間のサイトを繋げる
+                  <span className="text-gray-200">広告ネットワーク</span>
+                  を提供するサービスです。
                 </div>
               </div>
             </div>
@@ -53,7 +55,9 @@ function About() {
                   className="w-full p-4 text-[14px]"
                   style={{ wordWrap: "keep-all" }}
                 >
-                  自分のサイトに広告を掲載する事で、他の人がサイトに設置した<span className="text-green-500">広告</span>に自分のサイトが載ります。勿論、自分が載せるだけでもOKです。
+                  自分のサイトに広告を掲載する事で、他の人がサイトに設置した
+                  <span className="text-green-500">広告</span>
+                  に自分のサイトが載ります。勿論、自分が載せるだけでもOKです。
                 </div>
               </div>
             </div>
@@ -94,8 +98,10 @@ function About() {
                   className="w-full p-4 text-[14px]"
                   style={{ wordWrap: "keep-all" }}
                 >
-                  LiberADは、学生達の<span className="text-blue-500">善意</span>によって成り立っています。<br/>
-                  広告を意図的に見えなくすること。広告としての機能を損なわせること。その他 違反行為。
+                  LiberADは、学生達の<span className="text-blue-500">善意</span>
+                  によって成り立っています。
+                  <br />
+                  広告を意図的に見えなくすること。広告としての機能を損なわせること。etc..
                 </div>
               </div>
             </div>

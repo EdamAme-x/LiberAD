@@ -4,10 +4,10 @@ function IndexCenter() {
   let mainAA = `
   ----------
   | -Site-  |                                     // =====| Liber AD | ===== \\
-  |________|                                   //                                           ---------                                                  ----------
-        \\=====| Liber AD |===\\//                                            |   Site   |                                                  |   Site   |
-                                           ----------                                       |________|                                                 |________|
-                                           | -Site-  |                                            \\=========| Liber AD |========//====| Liber AD |===
+  |________|                                   //                                           ---------                                                  ----------                        ----------
+        \\=====| Liber AD |===\\//                                            |   Site   |                                                  |   Site   |                         |   Site   |
+                                           ----------                                       |________|                                                 |________|                         |________|
+                                           | -Site-  |                                            \\=========| Liber AD |========//====| Liber AD |===//
                                            |________|                                                                                                                                            //
                                                                                                                                                                                                 --------
                                                                                                                                                                                                 |  Site  |
@@ -19,7 +19,7 @@ function IndexCenter() {
   function getVisual() {
     return (
       <>
-        <div style={{ filter: "blur(0px)" }}>
+        <div style={{ filter: "blur(0px)"}}>
           <h2
             style={{ filter: "blur(0px)" }}
             className="text-2xl font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white w-screen absolute top-[80px] left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -41,7 +41,7 @@ function IndexCenter() {
 
           <Link
             to="/#start"
-            className="p-2 pl-4 pr-4 text-xl w-[140px] fixed top-[200px] left-1/2 -translate-x-1/2 bg-green-500 rounded-lg hover:bg-green-600 font-bold"
+            className="p-2 pl-4 pr-4 text-xl w-[140px] fixed z-99  top-[200px] left-1/2 -translate-x-1/2 bg-green-400 rounded-lg hover:bg-green-600 font-bold"
           >
             Get Started
           </Link>
@@ -55,8 +55,8 @@ function IndexCenter() {
       <div className="w-screen h-[300px] bg-gray-900 overflow-x-hidden select-none">
         <div>{getVisual()}</div>
         <div
-          className="w-[1000px] break-none"
-          style={{ filter: "blur(1.2px)" }}
+          className="w-[1000px] break-none "
+          style={{ filter: "blur(1.2px)"}}
           dangerouslySetInnerHTML={{ __html: mainAA }}
         ></div>
       </div>
