@@ -15,7 +15,7 @@ function IndexCenter() {
       <>
         <div style={{ filter: "blur(0px)" }}>
           <h2 style={{ filter: "blur(0px)" }} className="text-2xl font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white w-screen absolute top-[80px] left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <span className="text-gray-300">Welcome</span> to{" "}
+            <span className="text-gray-500">Welcome</span> to{" "}
             <span className="text-green-500">Liber</span>{" "}
             <span className="text-red-500">AD</span>{" "}
             <span className="text-blue-500">!</span>
@@ -33,7 +33,7 @@ function IndexCenter() {
   return (
     <div className="w-screen">
       <div
-        className="w-screen h-[300px] bg-gray-900 overflow-x-hidden select-none"
+        className="w-screen h-[200px] bg-gray-900 overflow-x-hidden select-none bg-gradient-to-b from-green-300 via-red-300 to-blue-300"
       >
         <div>{getVisual()}</div>
         <div

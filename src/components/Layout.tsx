@@ -2,7 +2,8 @@ import { ReactNode } from "preact";
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";
 import { Head } from "$fresh/runtime.ts";
-import GlobalStyle from 'LiberComp/GlobalStyle.tsx';
+import GlobalStyle from "LiberComp/GlobalStyle.tsx";
+import Link from "LiberComp/Link.tsx";
 
 type LayoutProps = {
   children: ReactNode;
@@ -20,8 +21,6 @@ export default function Layout({
   classes,
   classChild,
 }: LayoutProps) {
-
-
   return (
     <>
       <Head>
@@ -46,9 +45,15 @@ export default function Layout({
           }
         >
           {children}
-          
         </div>
         <Footer />
+        <div className="fixed bottom-5 right-5 z-100 w-10 h-10 bg-gray-300 rounded-full">
+          <Link to="#">
+            <span className="font-extrabold text-xl w-full h-full flex items-center justify-center select-none">
+              ⇧
+            </span>
+          </Link>
+        </div>
         <GlobalStyle />
       </div>
     </>
