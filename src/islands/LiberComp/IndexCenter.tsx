@@ -33,7 +33,7 @@ function IndexCenter() {
   return (
     <div className="w-screen">
       <div
-        className="w-screen h-[200px] bg-gray-900 overflow-x-hidden select-none bg-gradient-to-b from-green-300 via-red-300 to-blue-300"
+        className="w-screen h-[250px] bg-gray-900 overflow-x-hidden select-none"
       >
         <div>{getVisual()}</div>
         <div
