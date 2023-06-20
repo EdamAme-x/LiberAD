@@ -1,7 +1,13 @@
 
 export default function GlobalStyle() {
 
-  const style = `body {
+  const style = `
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
     overflow-x: hidden;
   }
   
