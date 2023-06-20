@@ -19,7 +19,7 @@ function IndexCenter() {
   function getVisual() {
     return (
       <>
-        <div style={{ filter: "blur(0px)"}}>
+        <div style={{ filter: "blur(0px)" ,position: "relative",zIndex: "2"}}>
           <h2
             style={{ filter: "blur(0px)" }}
             className="text-2xl font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white w-screen absolute top-[80px] left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -56,7 +56,7 @@ function IndexCenter() {
         <div>{getVisual()}</div>
         <div
           className="w-[1000px] break-none "
-          style={{ filter: "blur(1.2px)"}}
+          style={{ filter: "blur(1.2px)" }}
           dangerouslySetInnerHTML={{ __html: mainAA }}
         ></div>
       </div>

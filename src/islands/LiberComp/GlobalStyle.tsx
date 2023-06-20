@@ -10,6 +10,7 @@ export default function GlobalStyle() {
   body {
     overflow-x: hidden;
     line-height: 1.5;
+    background-color: #333;
   }
   
   ::-webkit-scrollbar {

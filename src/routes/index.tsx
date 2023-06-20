@@ -1,6 +1,7 @@
 import Layout from "Layout"; //deno.json => from Layout
 import Link from "LiberComp/Link.tsx";
 import IndexCenter from "LiberComp/IndexCenter.tsx";
+import Ref from "../islands/Ref.tsx";
 
 export default function TopPage() {
   return (
@@ -9,6 +10,7 @@ export default function TopPage() {
         <IndexCenter />
         <About />
         <Example />
+        <Details />
       </Layout>
     </>
   );
@@ -115,7 +117,7 @@ function About() {
 
 function Example() {
   return (
-    <div>
+    <div id={"example"}>
       <h3 className="text-3xl text-center mt-3 font-bold">
         <span className="text-red-500">&lt;</span>
         <span className="text-4xl px-2">Example </span>
@@ -123,19 +125,38 @@ function Example() {
         <span className="text-red-500">&gt;</span>
       </h3>
 
-      <div className="w-full h-auto flex flex-wrap">
-        <div className="sm:w-1/2 w-full h-auto">
-          <div className="w-full h-[300px] bg-gray-700">
-            <h4>AD</h4>
+      <div className="w-full h-auto flex flex-wrap mt-5 pb-5">
+        <div className="sm:w-1/2 border-b sm:border-r sm:border-b-0 border-gray-300 w-full h-auto">
+          <div className="w-full h-[300px]">
+            <h4 className="text-white text-center font-bold mx-auto text-2xl">
+              AD Smaple
+            </h4>
           </div>
         </div>
 
         <div className="sm:w-1/2 w-full h-auto">
-          <div className="w-full h-[300px] bg-gray-700">
-            <h4>Sites participating in Liber AD</h4>
+          <div className="w-full h-[300px]">
+            <h4 className="text-white text-center font-bold mx-auto text-2xl">
+              Sites using Liber AD
+            </h4>
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Details() {
+  return (
+    <div id={"details"}>
+      <h3 className="text-3xl text-center mt-3 font-bold">
+        <span className="text-blue-500">&lt;</span>
+        <span className="text-4xl px-2">Details </span>
+        <span className="text-gray-400">/</span>
+        <span className="text-blue-500">&gt;</span>
+      </h3>
+
+      <Ref />
     </div>
   );
 }

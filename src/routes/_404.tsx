@@ -10,6 +10,10 @@ function _404() {
         <hr className="mt-5"/>
 
         <h2 className="text-center mt-5 text-xl">広告</h2>
+
+        <div id="liberad" data-version="1.00" token="7a543ec8db439e69d3e2e940195353815eb13f2c4f001bff7578e5699287fb8f">
+
+        </div>
       </Layout>
     </>
   )
