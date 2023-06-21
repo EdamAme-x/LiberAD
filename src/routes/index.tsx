@@ -182,6 +182,17 @@ function Details() {
       </h3>
 
       <Ref />
+
+      <p className="mt-5 text-center">
+        不具合や質問、要望はDMまでお願いします。
+        <a
+          href="https://twitter.com/macl2189"
+          target="_blank"
+          className="text-blue-300 underline"
+        >
+          DM
+        </a>
+      </p>
     </div>
   );
 }
