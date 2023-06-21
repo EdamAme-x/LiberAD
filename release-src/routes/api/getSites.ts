@@ -1,5 +1,5 @@
 import { HandlerContext } from '$fresh/server.ts';
-import sites from './sites.js';
+import sites from './sites.ts';
 
 export const handler = async (_req: Request, _ctx: HandlerContext): Promise<Response> => {
     let $_GET: { [key: string]: string | string[] } = {};
