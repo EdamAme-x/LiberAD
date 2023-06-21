@@ -72,7 +72,7 @@ if (window.location && document.querySelector("#liberad")) {
                 __el[i].innerHTML = makeAD(JSON.stringify(data)); // Convert object to string
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error(' [ LiberAD ] ', error);
             });
     }
 }
