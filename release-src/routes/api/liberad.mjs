@@ -15,7 +15,7 @@ if (window.location && document.querySelector("#liberad")) {
     let __el = document.querySelectorAll("#liberad");
 
     for (let i = 0; i < __el.length; i++) {
-        fetch("https://liberad.deno.dev/api/getSites?token" + window.LiberAD.token) // fetch API
+        fetch("http://localhost:8000/api/getSites?token" + window.LiberAD.token) // fetch API
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`LiberAD: Sorry. `,` Status: ${response.status}`);
@@ -50,6 +50,9 @@ if (window.location && document.querySelector("#liberad")) {
                                 padding: 5px 0px 1px 10px;
                                 text-align: left;
                                 backdrop-filter: blur(4px);
+                                background: rgba(0, 0, 0, 0.3);
+                                border-radius: 0 0 10px 0;
+                                height: 35px;
                                 overflow: hidden;
                             }
 

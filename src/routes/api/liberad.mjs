@@ -50,6 +50,9 @@ if (window.location && document.querySelector("#liberad")) {
                                 padding: 5px 0px 1px 10px;
                                 text-align: left;
                                 backdrop-filter: blur(4px);
+                                background: rgba(0, 0, 0, 0.3);
+                                border-radius: 0 0 10px 0;
+                                height: 35px;
                                 overflow: hidden;
                             }
 

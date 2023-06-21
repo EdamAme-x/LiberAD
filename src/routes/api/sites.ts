@@ -3,19 +3,19 @@
 interface Site {
     title: string | undefined; //タイトル
     url: string; //リンク(Top)
-    img: string | undefined; //スクレイピングでゲット icon
+    img: string | undefined; 
 }
 
 const sites: Site[] = [
     {
         title: "LiberAD",
         url: "https://liberad.deno.dev",
-        img: "https://cdn.jsdelivr.net/npm/simple-icons@8.8.0/icons/github.svg",
+        img: "https://liberad.deno.dev/logo.png",
     },
     {
         title: "Liberluna Site",
         url: "https://liberluna.github.io",
-        img: "https://cdn.jsdelivr.net/npm/simple-icons@8.8.0/icons/github.svg",
+        img: "https://liberluna.github.io/favicon.png",
     },
 ]
 
