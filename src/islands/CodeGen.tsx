@@ -9,13 +9,25 @@ export default function CodeGenerator() {
       <div
         id="liberad"
         data-version="1.00"
-        data-token="${place ? 'free' : 'net' + code}"
+        data-token="${place ? "free" : "net" + code}"
       ></div>
       <script src="http://localhost:8000/api/LiberAD"></script>
     `;
   };
 
   const codeInit = generateTokenCode();
+
+  function handlCopy() {
+    const range = document.createRange();
+    range.selectNode(document.getElementById("code"));
+
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+    window.alert("コピーが成功しました!");
+  }
 
   return (
     <>
@@ -44,7 +56,15 @@ export default function CodeGenerator() {
             Generate
           </button>
         </div>
-        <div className="mt-5 bg-gray-500 p-3 text-center w-auto">{codeInit} <button className="btn border-2 border-gray-300 p-[0.75px] bg-blue-500 hover:bg-blue-600 rounded text-white">Copy</button></div>
+        <div className="mt-5 bg-gray-500 p-3 text-center w-auto" id={"code"}>
+          {codeInit}{" "}
+        </div>
+        <button
+          className="btn border-2 border-gray-300 p-[0.75px] bg-blue-500 hover:bg-blue-600 rounded text-white w-screen"
+          onClick={handlCopy}
+        >
+          Copy
+        </button>
       </div>
     </>
   );
