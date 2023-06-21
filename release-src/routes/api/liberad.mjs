@@ -15,7 +15,7 @@ if (window.location && document.querySelector("#liberad")) {
     let __el = document.querySelectorAll("#liberad");
 
     for (let i = 0; i < __el.length; i++) {
-        fetch("http://localhost:8000/api/getSites?token" + window.LiberAD.token) // fetch API
+        fetch("https://liberad.deno.dev/api/getSites?token" + window.LiberAD.token) // fetch API
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`LiberAD: Sorry. `,` Status: ${response.status}`);
