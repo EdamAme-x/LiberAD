@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 import Layout from "Layout";
-import CodeGenerator from "../islands/CodeGen.js";
+import CodeGenerator from "../islands/CodeGen.tsx";
 
 export default function Start() {
   return (

@@ -1,7 +1,7 @@
 import Layout from "Layout"; //deno.json => from Layout
 import Link from "LiberComp/Link.tsx";
 import IndexCenter from "LiberComp/IndexCenter.tsx";
-import Ref from "../islands/Ref.js";
+import Ref from "../islands/Ref.tsx";
 
 export default function TopPage() {
   return (
