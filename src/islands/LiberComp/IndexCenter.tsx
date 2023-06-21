@@ -1,4 +1,5 @@
 import Link from "LiberComp/Link.tsx";
+import { useEffect , useState } from "preact/hooks";
 
 function IndexCenter() {
   let mainAA = `
@@ -16,10 +17,27 @@ function IndexCenter() {
   `;
   mainAA = mainAA.replace(/\n/g, "<br/>").replace(/ /g, "&nbsp;");
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); //windowのリサイズイベント
+
   function getVisual() {
     return (
       <>
-        <div style={{ filter: "blur(0px)" ,position: "relative",zIndex: "2"}}>
+        <div
+          style={{ filter: "blur(0px)", position: "relative", zIndex: "2" }}
+          className="w-screen"
+        >
           <h2
             style={{ filter: "blur(0px)" }}
             className="text-2xl font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white w-screen absolute top-[80px] left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -39,12 +57,20 @@ function IndexCenter() {
             自由にサイトに広告を設置できます。 条件 : 学生であること。
           </h3>
 
-          <Link
-            to="/#details"
-            className="p-2 pl-4 pr-4 text-xl w-[140px] fixed z-99  top-[200px] left-1/2 -translate-x-1/2 bg-green-400 rounded-lg hover:bg-green-600 font-bold"
+          <div
+            className={
+              "w-screen ml-[" +
+              ((window.innerWidth - 140) / 2).toString() +
+              "px]"
+            }
           >
-            Get Started
-          </Link>
+            <Link
+              to="/#details"
+              className="p-2 pl-4 pr-4 text-xl relative z-99 top-[200px] ml-auto text-white bg-green-400 rounded-lg hover:bg-green-600 font-bold"
+            >
+              Get Started
+            </Link>
+          </div>
         </div>
       </>
     );
