@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 import Layout from "Layout";
-import CodeGenerator from "../islands/CodeGen.tsx";
+import CodeGenerator from "../islands/CodeGen.js";
 
 export default function Start() {
   return (
@@ -33,4 +33,3 @@ export default function Start() {
     </Layout>
   );
 }
-

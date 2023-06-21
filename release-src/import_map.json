@@ -1,0 +1,6 @@
+{
+    "imports": {
+      "$fresh/": "https://raw.githubusercontent.com/lucacasonato/fresh/main/",
+      "lodash/": "https://deno.land/x/lodash@4.17.15-es/"
+    }
+}

@@ -2,18 +2,18 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/api/LiberAD.ts";
-import * as $2 from "./routes/api/getSites.ts";
+import * as $0 from "./routes/_404.js";
+import * as $1 from "./routes/api/LiberAD.js";
+import * as $2 from "./routes/api/getSites.js";
 import * as $3 from "./routes/api/liberad.mjs";
-import * as $4 from "./routes/api/sites.ts";
-import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/start.tsx";
-import * as $$0 from "./islands/CodeGen.tsx";
-import * as $$1 from "./islands/LiberComp/GlobalStyle.tsx";
-import * as $$2 from "./islands/LiberComp/IndexCenter.tsx";
-import * as $$3 from "./islands/LiberComp/Link.tsx";
-import * as $$4 from "./islands/Ref.tsx";
+import * as $4 from "./routes/api/sites.js";
+import * as $5 from "./routes/index.js";
+import * as $6 from "./routes/start.js";
+import * as $$0 from "./islands/CodeGen.js";
+import * as $$1 from "./islands/LiberComp/GlobalStyle.js";
+import * as $$2 from "./islands/LiberComp/IndexCenter.js";
+import * as $$3 from "./islands/LiberComp/Link.js";
+import * as $$4 from "./islands/Ref.js";
 
 const manifest = {
   routes: {
