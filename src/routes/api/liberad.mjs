@@ -5,7 +5,9 @@ if (window.location && document.querySelector("#liberad")) {
         check: true, // token check TBD
         here: window.location.href,
         close: function (thisEl) {
-            document.querySelector("[liber-index='"+thisEl.getAttribute('liber-index') + "']").style.opacity = 0;
+            document.querySelector("[liber-index='"+thisEl.getAttribute('liber-index') + "']").innerHTML = "もし良ければ 問題を <a href='https://twitter.com/macl2189' style='text-decoration: underline;' target='_blank'>DM</a> にてお伝えください。";
+            document.querySelector("[liber-index='"+thisEl.getAttribute('liber-index') + "']").style.color = "#000";
+            document.querySelector("[liber-index='"+thisEl.getAttribute('liber-index') + "']").style.background = "#fff";
             document.querySelector("[liber-index='"+thisEl.getAttribute('liber-index') + "']").onclick = void 0;
         }
     }

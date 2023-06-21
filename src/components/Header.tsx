@@ -29,13 +29,13 @@ export default function Header() {
         Example
       </Link>
       <Link
-        to="/#about"
+        to="/#details"
         className="mx-2 p-2.5 text-xl hover:bg-gray-600 rounded"
       >
         Details
       </Link>
       <Link
-        to="/#start"
+        to="/start"
         className="ml-5 p-5 pt-2.5 pb-2.5 text-xl bg-blue-500 rounded hover:bg-blue-600 font-bold hidden md:flex"
       >
         Get Started

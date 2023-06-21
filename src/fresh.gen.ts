@@ -4,11 +4,11 @@
 
 import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/api/LiberAD.ts";
-import * as $2 from "./routes/api/ad.ts";
-import * as $3 from "./routes/api/getSites.ts";
-import * as $4 from "./routes/api/liberad.mjs";
-import * as $5 from "./routes/api/sites.ts";
-import * as $6 from "./routes/index.tsx";
+import * as $2 from "./routes/api/getSites.ts";
+import * as $3 from "./routes/api/liberad.mjs";
+import * as $4 from "./routes/api/sites.ts";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/start.tsx";
 import * as $$0 from "./islands/LiberComp/GlobalStyle.tsx";
 import * as $$1 from "./islands/LiberComp/IndexCenter.tsx";
 import * as $$2 from "./islands/LiberComp/Link.tsx";
@@ -18,11 +18,11 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
     "./routes/api/LiberAD.ts": $1,
-    "./routes/api/ad.ts": $2,
-    "./routes/api/getSites.ts": $3,
-    "./routes/api/liberad.mjs": $4,
-    "./routes/api/sites.ts": $5,
-    "./routes/index.tsx": $6,
+    "./routes/api/getSites.ts": $2,
+    "./routes/api/liberad.mjs": $3,
+    "./routes/api/sites.ts": $4,
+    "./routes/index.tsx": $5,
+    "./routes/start.tsx": $6,
   },
   islands: {
     "./islands/LiberComp/GlobalStyle.tsx": $$0,

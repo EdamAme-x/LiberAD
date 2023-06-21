@@ -40,7 +40,7 @@ function IndexCenter() {
           </h3>
 
           <Link
-            to="/#start"
+            to="/#details"
             className="p-2 pl-4 pr-4 text-xl w-[140px] fixed z-99  top-[200px] left-1/2 -translate-x-1/2 bg-green-400 rounded-lg hover:bg-green-600 font-bold"
           >
             Get Started

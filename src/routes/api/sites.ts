@@ -16,7 +16,7 @@ const sites: Site[] = [
         title: "Liberluna Site",
         url: "https://liberluna.github.io",
         img: "https://cdn.jsdelivr.net/npm/simple-icons@8.8.0/icons/github.svg",
-    }
+    },
 ]
 
 export default sites

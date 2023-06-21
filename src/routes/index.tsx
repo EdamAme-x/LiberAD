@@ -131,6 +131,15 @@ function Example() {
             <h4 className="text-white text-center font-bold mx-auto text-2xl">
               AD Smaple
             </h4>
+
+            <div className="w-full flex justify-center mt-5">
+              <div
+                id="liberad"
+                data-version="1.00"
+                data-token="7a543ec8db439e69d3e2e940195353815eb13f2c4f001bff7578e5699287fb8f"
+              ></div>
+            </div>
+            <script src="http://localhost:8000/api/LiberAD"></script>
           </div>
         </div>
 
@@ -139,6 +148,22 @@ function Example() {
             <h4 className="text-white text-center font-bold mx-auto text-2xl">
               Sites using Liber AD
             </h4>
+
+            <div className="w-full text-center mt-5">
+                <div className="mx-auto w-2/3 bg-gray-700 hover:bg-gray-600 rounded-lg shadow-lg">
+                  <a href="/">LiberAD</a>
+                </div>
+
+                <div className="mx-auto w-2/3 bg-gray-700 hover:bg-gray-600 rounded-lg shadow-lg">
+                  <a href="https://liberluna.github.io">Liberluna Site</a>
+                </div>
+
+                <div className="mx-auto w-2/3 bg-gray-700 hover:bg-gray-600 rounded-lg shadow-lg">
+                  <a href="https://liberchat.deno.dev">LiberChat</a>
+                </div>
+
+                <p>随時追加</p>
+            </div>
           </div>
         </div>
       </div>
