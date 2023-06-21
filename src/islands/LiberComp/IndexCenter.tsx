@@ -66,7 +66,7 @@ function IndexCenter() {
           >
             <Link
               to="/#details"
-              className="p-2 pl-4 pr-4 text-xl relative z-99 top-[200px] ml-auto text-white bg-green-400 rounded-lg hover:bg-green-600 font-bold"
+              className="p-2 pl-4 pr-4 text-xl break-none relative z-99 top-[200px] ml-auto text-white bg-green-400 rounded-lg hover:bg-green-600 font-bold"
             >
               Get Started
             </Link>
