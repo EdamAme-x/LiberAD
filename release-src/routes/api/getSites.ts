@@ -28,6 +28,9 @@ export const handler = async (_req: Request, _ctx: HandlerContext): Promise<Resp
         headers: {
             liberad: 'true',
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
         },
     });
 };
