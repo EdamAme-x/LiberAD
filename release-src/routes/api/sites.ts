@@ -17,6 +17,11 @@ const sites: Site[] = [
         url: "https://liberluna.github.io",
         img: "https://liberluna.github.io/favicon.png",
     },
+    {
+        title: "LiberChat",
+        url: "https://liberchat.deno.dev",
+        img: "https://liberchat.deno.dev/icon/192x192.png"
+    }
 ]
 
 export default sites
